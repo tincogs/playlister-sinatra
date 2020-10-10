@@ -5,7 +5,6 @@ class SongsController < ApplicationController
         erb :song_index
     end
 
-<<<<<<< HEAD
     get '/songs/new' do
         @genres = Genre.all
         erb :song_new
@@ -46,9 +45,6 @@ class SongsController < ApplicationController
 
 
     get '/songs/:slug' do |slug|
-=======
-    get "/songs/:slug" do |slug|
->>>>>>> f4835377c9e5e57f2fae7bcde28af12979810c21
         @song = Song.find_by_slug(slug)
         erb :song_show
     end

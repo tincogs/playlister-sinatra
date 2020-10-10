@@ -1,23 +1,13 @@
-<<<<<<< HEAD
 
 <label for="song_name"><%= @song.name %></label>
 <a href="/artists/<%= @song.artist.slug %>"><h3><%= @song.artist.name %></h3></a>
 <% @song.genres.each do |g| %>
     <a href="/genres/<%= g.slug %>"><%= g.name %></a>
 <% end %>
-=======
-<h1><%= @song.name %></h1>
->>>>>>> f4835377c9e5e57f2fae7bcde28af12979810c21
 
 <h3><a href="/artists/<%= @song.artist.slug %>"><%= @song.artist.name %></a></h3>
 
 
-<<<<<<< HEAD
 <h2>Successfully updated song.</h2>
 <h1>Successfully created song.</h1>
 
-=======
-<% @song.genres.each do |g| %>
-    <p><a href="/genres/<%= g.slug %>"><%= g.name %></a></p>
-    <% end%>
->>>>>>> f4835377c9e5e57f2fae7bcde28af12979810c21
