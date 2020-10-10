@@ -1,9 +1,23 @@
+<<<<<<< HEAD
 <% @artist.songs.each do |s| %>
     <p><a href="/songs/<%= s.slug %>"><%= s.name %></p>
 <% end %>
+=======
+<h1><%= @artist.name %></h1>
+
+
+<% @artist.songs.each do |s| %>
+
+    <p><a href="/songs/<%= s.slug %>"><%= s.name %></a></p>
+    <% end%>
+>>>>>>> f4835377c9e5e57f2fae7bcde28af12979810c21
 
 <br><br>
 
 <% @artist.genres.each do |g| %>
     <p><a href="/genres/<%= g.slug %>"><%= g.name %></a></p>
+<<<<<<< HEAD
 <% end %>
+=======
+    <% end %>
+>>>>>>> f4835377c9e5e57f2fae7bcde28af12979810c21
